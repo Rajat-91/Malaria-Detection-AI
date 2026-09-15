@@ -1,27 +1,64 @@
 # 🦠 Malaria Detection AI
 
-A deep learning-based image classification project for detecting malaria parasites from microscopic blood-cell images. The project compares multiple convolutional neural network architectures and uses Grad-CAM to provide visual insight into model predictions.
+### Deep Learning-Based Malaria Cell Classification with Explainable AI
 
-> **Note:** This project is developed for educational and research purposes. It is not a clinical diagnostic system and should not be used for medical diagnosis or treatment decisions.
+[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
+[![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-red.svg)](https://keras.io/)
+[![Gradio](https://img.shields.io/badge/Gradio-Interactive%20Demo-yellow.svg)](https://www.gradio.app/)
+
+A deep learning project that classifies microscopic blood-cell images as **Parasitized** or **Uninfected** using multiple CNN architectures.
+
+The project compares a **Custom CNN, MobileNetV2, and ResNet50**, achieving a best test accuracy of **96.52% with ResNet50**. Grad-CAM is also used to provide visual insight into the regions influencing model predictions.
+
+---
+
+## 🚀 Highlights
+
+| Feature           | Details                                                 |
+| ----------------- | ------------------------------------------------------- |
+| 🧠 Models         | Custom CNN, MobileNetV2, ResNet50                       |
+| 🎯 Best Accuracy  | **96.52%**                                              |
+| 🔬 Task           | Binary Image Classification                             |
+| 🔍 Explainability | Grad-CAM                                                |
+| 🖥️ Interface     | Gradio                                                  |
+| 📊 Evaluation     | Accuracy, Precision, Recall, F1-score, Confusion Matrix |
+| ⚖️ Dataset        | Balanced Parasitized / Uninfected classes               |
+
+---
+
+## 📊 Model Performance
+
+| Model           | Test Accuracy | Parameters |
+| --------------- | ------------: | ---------: |
+| Custom CNN      |        95.74% |    110,785 |
+| MobileNetV2     |        94.19% |  3,732,801 |
+| 🏆 **ResNet50** |    **96.52%** | 25,947,265 |
+
+### 🏆 Best Model — ResNet50
+
+ResNet50 achieved the highest test accuracy of **96.52%** among the evaluated models.
+
+The model also achieved approximately **97% overall accuracy** in the reported classification evaluation.
+
+---
+
+## 🔬 Explainable AI
+
+The project uses **Grad-CAM (Gradient-weighted Class Activation Mapping)** to visualize the regions of a microscopic cell image that contribute to the model's prediction.
+
+This makes the model's decision-making easier to inspect instead of relying only on the final classification output.
 
 ---
 
 ## 📌 Overview
 
-Malaria is a serious disease caused by *Plasmodium* parasites. Microscopic examination of blood smears is commonly used to identify infected cells.
+Malaria is a serious disease caused by *Plasmodium* parasites. This project explores the use of deep learning for automatically classifying microscopic blood-cell images into **Parasitized** and **Uninfected** categories.
 
-This project explores whether deep learning can automatically classify microscopic blood-cell images into:
+The goal is to compare different CNN architectures and investigate the effectiveness of both lightweight and deeper models for this image-classification task.
 
-* **Parasitized**
-* **Uninfected**
+> ⚠️ **Educational Disclaimer:** This project is intended for educational and research purposes only. It is not a clinical diagnostic system and should not be used for medical diagnosis or treatment decisions.
 
-Three different deep learning approaches are implemented and evaluated:
-
-1. **Custom CNN**
-2. **MobileNetV2**
-3. **ResNet50**
-
-The best-performing model is further analyzed using **Grad-CAM** to visualize the image regions that influence its predictions.
 
 ---
 
