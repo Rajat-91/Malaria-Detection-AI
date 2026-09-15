@@ -1,0 +1,11 @@
+cell_images/
+dataset/
+__pycache__/
+.ipynb_checkpoints/
+venv/
+.venv/
+.env
+*.h5
+*.keras
+*.pkl
+*.joblib
