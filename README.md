@@ -197,23 +197,23 @@ For the final ResNet50 model, the classification results were approximately:
 
 ### Class Distribution
 
-![Class Distribution](class_distribution.png)
+![Class Distribution](results/class_distribution.png)
 
 ### CNN Confusion Matrix
 
-![CNN Confusion Matrix](cnn_confusion_matrix.png)
+![CNN Confusion Matrix](results/cnn_confusion_matrix.png)
 
 ### CNN Training Curves
 
-![CNN Training Curves](cnn_training_curves.png)
+![CNN Training Curves](results/cnn_training_curves.png)
 
 ### Model Confusion Matrix
 
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](results/confusion_matrix.png)
 
 ### Training Curves
 
-![Training Curves](training_curves.png)
+![Training Curves](results/training_curves.png)
 
 ---
 
